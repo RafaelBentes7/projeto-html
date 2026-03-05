@@ -17,10 +17,29 @@
             figure {
                 text-align: center;
             }
+            table, th, td {
+                border: 1px solid black;
+            }
+            th, td {
+                padding: 8px;
+            }
+            td {
+                text-align: center;
+            }
+            th {
+                text-align: left;
+            }
+            table {
+                margin: 0 auto;
+                border-collapse: separate;
+            }
+            h1, h2 {
+                text-align: center;
+            }
         </style>
     </head>
     <body>
-        <header>
+        <header id="topo">
             <h1>Fórmula 1</h1>
             <nav>
                 <ul>
@@ -48,7 +67,8 @@
                     </p>
                     <p>Se tratando dos carros, é quando falamos da parte mais genial e trabalhosa da Fórmula 1.
                         As equipes são responsáveis por desenvolver o carro do zero a partir de um regulamento base
-                        definido pela FIA, com algumas regras e limitações que todas devem seguir.<em> Porém, o melhor
+                        definido pela <abbr title="Federação Internacional de Automobilismo">FIA</abbr>, 
+                        com algumas regras e limitações que todas devem seguir.<em> Porém, o melhor
                         de tudo esta ai:</em> devido à horas de trabalho e estudo acerca do regulamento, frequentemente
                         as equipes descobrem brechas dentro das regras e modificam seus carros de forma a obterem
                         o maior desempenho, segurança e eficiência nas pistas. Por esse motivo é tão comum a comparação
@@ -60,12 +80,24 @@
                         Componentes como freios de alto desempenho e os sistemas de recuperação de energia utilizados em carros elétricos
                         são um exemplo disso. 
                     </p>
-                    <blockquote cite="https://oversteer48.com/formula-1-quotes/?utm_source=chatgpt.com">
-                        <p>"If you no longer go for a gap that exists, you're no longer a racing driver".</p>
-                        <footer><cite>Ayrton Senna da Silva</cite></footer>
+                    <p>
+                        Tudo na fórmula 1 opera em seu mais alto nível e isso vale para todos os segmentos do esporte. Os pilotos
+                        precisam estar condicionados tanto para aguentarem as exaustivas corridas quanto para estarem de acordo com 
+                        o regulamento, que visa um peso mínimo do carro + piloto (nas regras atuais, mínimo de 768 kg). A equipe presente
+                        no box das equipes, além de serem ótimos engenheiros, precisam também de ótimo condionamento físico, pois são 
+                        responsáveis pelas rápidas trocas de pneus, que podem chegar a durar menos de 2 segundos. E não parou por ai,
+                        como estamos falando de carros que chegam a mais de 300 km/h, as tomadas de decisões dos chefes de equipe e seus
+                        estrategistas precisam ser rápidas e precisas, caso contrário, o menor erro pode ser o responsável pela vitória 
+                        ou pela derrota. Resumindo, a Fórmula 1 é um ecossistema em que todas as partes operam no limite para garantir 
+                        que tudo funcione da maneira mais eficiente possível, nos proporcionando um espetáculo a cada vez que as luzes vermelhas 
+                        se apagam.
+                    </p>
+                    <blockquote cite="https://www.racefans.net/2015/11/20/if-you-no-longer-go-for-a-gap-which-exists-you-are-no-longer-a-racing-driver/">
+                        <p><strong>"If you no longer go for a gap that exists, you're no longer a racing driver".</strong></p>
+                        <footer><cite>Ayrton Senna da Silva em uma entrevista para a emissora Rede Globo após
+                            o Grande Prêmio do Japão em 1990.</cite></footer>
                     </blockquote>
             </section>
-        </main>
             <section id="topicos">
                 <h2>Tópicos</h2>
                     <h3>Cores das bandeiras utilizadas</h3>
@@ -82,7 +114,7 @@
                         <li>Quadriculada: Marca o final oficial da corrida, treino ou classificação.</li>
                     </ul>
                     <h3>Top 5 pilotos com mais vitórias na história</h3>
-                        <ol>
+                        <ol type="I">
                             <li>Lewis Hamilton (Reino Unido) - 105 vitórias
                                 <ul>
                                     <li>Vitória no Grande Prêmio da Grã-Bretanha em 2020 - Venceu com pneu furado na 
@@ -128,7 +160,7 @@
                                 <dd>O número de voltas realizadas entre a parada nos boxes e a próxima.</dd>
 
                                 <dt><strong>DRS (Drag Reduction System)</strong></dt>
-                                <dd>Asa traseira móvel que reduz o arrasto para facilitar as ultrapassagens.<dd>
+                                <dd>Asa traseira móvel que reduz o arrasto para facilitar as ultrapassagens.</dd>
 
                                 <dt><strong>Graining (Farofa)</strong></dt>
                                 <dd>Desgaste irregular do pneu que gera pedaços de borracha (farelos) grudados, 
@@ -146,32 +178,130 @@
                                 <dt><strong>Grand Chelem</strong></dt>
                                 <dd>Quando um piloto faz a pole-position, marca a melhor volta e vence a prova liderando
                                     de ponta a ponta (todas as voltas).</dd>
-                                
                             </dl>
+        </section>
+        <section id="dados">
+            <h2>Dados</h2>
+                <table>
+                    <caption>Equipes e pilotos do grid 2026 da Fórmula 1</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col"><strong>Equipes</strong></th>
+                            <th scope="col"><strong>Chefe de equipe</strong></th>
+                            <th scope="col"><strong>Piloto 1</strong></th>
+                            <th scope="col"><strong>Piloto 2</strong></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Mclaren Mastercard F1 Team</th>
+                            <td>Andre Stella</td>
+                            <td>Lando Norris</td>
+                            <td>Oscar Piastri</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Mercedes-AMG Petronas Formula One Team</th>
+                            <td>Toto Wolff</td>
+                            <td>George Russel</td>
+                            <td>Andre Kimi Antonelli</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Oracle Red Bull Racing</th>
+                            <td>Laurent Mekies</td>
+                            <td>Max Verstappen</td>
+                            <td>Isack Hadjar</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Scuderia Ferrari HP</th>
+                            <td>Frédéric Vasseur</td>
+                            <td>Charles Leclerc</td>
+                            <td>Lewis Hamilton</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Atlassian Williams F1 Team</th>
+                            <td>James Vowles</td>
+                            <td>Alexander Albon</td>
+                            <td>Carlos Sainz</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Visa Cash App Racing Bulls Formula One Team</th>
+                            <td>Alan Permane</td>
+                            <td>Liam Lawson</td>
+                            <td>Arvid Lindblad</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Aston Martin Aramco Formula One Team</th>
+                            <td>Adrian Newey</td>
+                            <td>Fernando Alonso</td>
+                            <td>Lance Stroll</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">TGR Haas F1 Team</th>
+                            <td>Ayao Komatsu</td>
+                            <td>Esteban Ocon</td>
+                            <td>Oliver Bearman</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Audi Revolut F1 Team</th>
+                            <td>Jonathan Wheatley</td>
+                            <td>Nico Hülkenberg</td>
+                            <td>Gabriel Bortoleto</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">BWT Alpine Formula One Team</th>
+                            <td>Flavio Briatore</td>
+                            <td>Pierre Gasly</td>
+                            <td>Franco Colapinto</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Cadillac Formula 1 Team</th>
+                            <td>Graeme Lowdon</td>
+                            <td>Sergio Pérez</td>
+                            <td>Valtteri Bottas</td>
+                        </tr>
+                    </tbody>
+                </table>
         </section>
         <section id="galeria">
             <h2>Fotos</h2>
-
             <figure>
-                <img src="./Imagens/12.jpg" 
-                     alt="Carro Alfa Romeo da Fórmula 1 em 1950"
+                <img src="https://autoentusiastas.com.br/ae/wp-content/uploads/2025/06/fangio-goodwood.jpg" 
+                     alt="Alfa Romeo 158, Fangio 1950"
                      loading="lazy">
-                <figcaption>Carro da primeira temporada da Fórmula 1 Alfa Romeo - (1950)</figcaption>
+                <figcaption>Alfa Romeo 158 pilotada por Juan Manuel Fangio em 1950</figcaption>
             </figure>
-
             <figure>
-                <img src="./Imagens/max-verstappen-red-bull-racing.jpg" 
+                <img src="https://cdn.motorsport.com/images/mgl/6n7AoGe0/s1000/max-verstappen-red-bull-racing.jpg" 
                      alt="Carro da RedBull da temporada atual da Fórmula 1"
                      loading="lazy">
                 <figcaption>Carro da temporada atual de Fórmula 1 (RedBull)</figcaption>
             </figure>
-
             <figure>
-                <img src="./Imagens/Senna's_McLaren_MP4-8.jpg" 
+                <img src="https://s2-ge.glbimg.com/egnQaPfRligwkcCFtuCD8_BJfjI=/0x0:1920x1080/984x0/smart/filters:strip_icc()/s.glbimg.com/es/ge/f/original/2018/05/23/sennamonaco93d.jpg" 
                      alt="McLaren MP4/8 pilotada por Ayrton Senna"
                      loading="lazy">
                 <figcaption>McLaren MP4/8 de Ayrton Senna</figcaption>
             </figure>
+        </section>
+        <section>
+            <h2>Links úteis</h2>
+                <ul>
+                    <li><a href="https://www.formula1.com/"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Link para o site oficial da Fórmula 1
+                        </a>
+                    <li><a href="https://pt.wikipedia.org/wiki/F%C3%B3rmula_1"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Link para o site do Wikipedia sobre a Fórmula 1
+                        </a></li>
+                    <li><a href="https://www.fia.com/sites/default/files/fia_2025_formula_1_technical_regulations_-_issue_01_-_2024-12-11_1.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            FIA Formula One Technical Regulations
+                    </a></li>
+                </ul>
         </section>
 
         <footer>
@@ -182,6 +312,7 @@
                 © 2026 Rafael Bentes Fonseca. Todos os direitos reservados.
             </small>
         </footer>
-        
+        <a href="#topo">Voltar ao topo</a>
+    </main>
     </body>
     </html>
