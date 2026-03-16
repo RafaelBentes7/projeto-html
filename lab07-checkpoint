@@ -1,1 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de cadastro</title>
+</head>
+<body>
+    <h1>Formulário de cadastro de aluno</h1>
+    <h2>Informações</h2>
 
+    <form>
+        <label for="campo_nome">Nome:</label>
+        <input id="campo_nome" type="text" placeholder="Digite seu nome aqui"
+        required>
+        <br><br>
+
+        <label for="campo_email">E-mail:</label>
+        <input id="campo_email" type="email" placeholder="Digite seu e-mail aqui"
+        required>
+        <br><br>
+
+        <label for="cpf">CPF:</label>
+        <input id="cpf" type="text" 
+        placeholder="000.000.000-00"
+        pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+        inputmode="numeric"
+        required>
+        <br><br>
+
+        <label for="data_nascimento">Data de nascimento:</label>
+        <input id="data_nascimento" type="text" 
+        placeholder="mm/dd/yyyy"
+        required>
+        <br><br>
+
+        <h2>Curso</h2>
+        <select name="cursos">
+            <option selected disabled value="">Selecione seu curso</option>
+            <option value="cdia">Ciências de Dados</option>
+            <option value="engs">Engenharia de software</option>
+            <option value="engc">Engenharia da computação</option>
+        </select>
+        <br><br>
+
+        <fieldset>
+            <legend>Turno preferido</legend>
+                <input type="radio" id="manhã" name="turno" value="Manhã">
+                <label for="manhã">Manhã</label>
+
+                <input type="radio" id="tarde" name="turno" value="tarde">
+                <label for="tarde">Tarde</label>
+
+                <input type="radio" id="noite" name="turno" value="noite">
+                <label for="noite">Noite</label>
+        </fieldset>
+        <br><br>
+
+        <input id="item" type="checkbox" name="termos" value="Aceite os termos">
+        <label for="item">Aceite os termos</label>
+        <br><br>
+
+        <button type="submit">Enviar formulário</button>
+        <button type="reset">Limpar dados</button>
+    </form>
+</body>
+</html>
